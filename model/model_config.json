@@ -1,0 +1,12 @@
+{
+  "model_name": "MobileNetV2 + extra layers (fine-tuned)",
+  "model_file": "best_model.keras",
+  "img_size": 128,
+  "threshold": 0.33999999999999997,
+  "class_names": [
+    "No Pneumonia",
+    "Pneumonia"
+  ],
+  "tensorflow_version": "2.21.0",
+  "target_recall": 0.8
+}
