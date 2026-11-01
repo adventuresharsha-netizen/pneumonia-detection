@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 \
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --default-timeout=120 --retries 10 -r requirements.txt
 
 COPY app.py .
 COPY model/ model/
